@@ -24,12 +24,6 @@ const getCondition = async (locationcode) => {
 
 }
 
-getCity('istanbul')
-    .then(data => {
-        return getCondition(data.Key);
-    })
-    .then(data => console.log(data))
-    .catch(error => console.log(error));
 
 
 
